@@ -9,6 +9,6 @@
     <bean id="serviceImpl" class="com.Jonas.service.Impl.RpcServiceImpl" />
     <!-- exporting service by Motan -->
     <motan:registry regProtocol="zookeeper" name="my_zookeeper" address="120.24.77.101:2181"/>
-    <motan:service interface="com.Jonas.open.Test.RpcService" ref="serviceImpl" registry="my_zookeeper" export="8002" />
+    <motan:service interface="com.Jonas.open.Test.IRpcService" ref="serviceImpl" registry="my_zookeeper" export="8002" />
    
 </beans>
